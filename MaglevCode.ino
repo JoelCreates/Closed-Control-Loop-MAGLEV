@@ -24,7 +24,7 @@ void loop() {
   delay(1);        // delay in between reads for stability
 
   if (sensorValueA > 600) {
-    // Setting in a rangeof between 500 and 520 allows for constant spin on each opposite range, but setting it just on 520 makes it react instantly to the magnet's polarity
+    // Setting in a range of between 500 and 520 allows for constant spin on each opposite range, but setting it just on 520 makes it react instantly to the magnet's polarity
     digitalWrite(PSignal, HIGH);
     digitalWrite(IN1, sensorValueA);
     digitalWrite(IN2, LOW);
